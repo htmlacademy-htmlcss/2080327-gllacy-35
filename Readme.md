@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Анна Алексеева](https://up.htmlacademy.ru/htmlcss/35/user/2080327).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Рус](https://htmlacademy.ru/profile/vanillawulf)
 
 ---
 
