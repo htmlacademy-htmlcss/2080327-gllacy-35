@@ -7,7 +7,9 @@
 </head>
 <body>
 <header class="page-header">
-    <img src="img/main-logo.svg" width="137" height="56" alt="логотип Глэйси Шоп">
+    <a class="main-logo">
+        <img src="img/main-logo.svg" width="137" height="56" alt="логотип Глэйси Шоп">
+    </a>
     <nav class="navigation">
         <ul class="navigation-list">
             <li class="navigation-item">
@@ -16,19 +18,29 @@
                 </a>
                 <ul class="dropdown">
                     <li class="dropdown-item">
-                        Новинки
+                        <a class="dropdown-item-link" href="#">
+                            Новинки
+                        </a>
                     </li>
                     <li class="dropdown-item">
-                        Сливочное
+                        <a class="dropdown-item-link" href="#">
+                            Сливочное
+                        </a>
                     </li>
                     <li class="dropdown-item">
-                        Щербеты
+                        <a class="dropdown-item-link" href="#">
+                            Щербеты
+                        </a>
                     </li>
                     <li class="dropdown-item">
-                        Фруктовый лед
+                        <a class="dropdown-item-link" href="#">
+                            Фруктовый лед
+                        </a>
                     </li>
                     <li class="dropdown-item">
-                        Мелорин
+                        <a class="dropdown-item-link" href="#">
+                            Мелорин
+                        </a>
                     </li>
                 </ul>
             </li>
@@ -53,11 +65,10 @@
                 </a>
             </li>
             <li class="navigation-item">
-                <a class="navigation-link" href="#">
+                <a class="navigation-link icon-find" href="#">
            <span class="visually-hidden">
              Поиск
            </span>
-                    <img src="img/search.svg" width="14" height="14" alt="поиск">
                 </a>
             </li>
             <li class="navigation-item">
@@ -82,37 +93,51 @@
         Магазин натурального мороженного Глэйси Шоп
     </h1>
     <section class="section-slider">
-        <div class="slider-slide">
-            <div class="slider-slide-content">
+        <ul class="slider-slide">
+            <li class="slider-slide-content">
                 <h2 class="caption-slide">Нежный пломбир <br>
                     с клубничным джемом
                 </h2>
-                <p class="text">
-                    Натуральное мороженое из свежих сливок <br>
-                    и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.
-                </p>
-                <a class="button" href="#">
-                    Заказать
-                </a>
-                <span class="control-bullet">
-                      ...
-                  </span>
-            </div>
-            <div class="slider-nav">
-                <button class="slider-arrow-left">
-                    стрелка влево
-                </button>
+            </li>
+            <li class="text">
+                Натуральное мороженое из свежих сливок <br>
+                и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.
+            </li>
+        </ul>
+        <a class="button" href="#">
+            Заказать
+        </a>
+        <ul class="slider-meta">
+            <li class="slider-sub-slide">
                 <img src="img/slider-slide-strawberry-ice-cream.png" width="306" height="507"
                      alt="пломбир в вафельном рожке с клубничным джемом">
-                <button class="slider-arrow-right">
+            </li>
+            <li class="slider-sub-slide">
+                <img src="img/slider-sub-slide-banana.png" width="66" height="150" alt="банановое мороженое">
+            </li>
+            <li class="slider-sub-slide">
+                <img src="img/slider-sub-slide-caramel.png" width="66" height="150" alt="карамельный пломбир">
+            </li>
+        </ul>
+            <div class="slider-nav">
+                <button class="slider-arrow-left" type="button">
+                    стрелка влево
+                </button>
+                <button class="slider-arrow-right" type="button">
                     стрелка вправо
                 </button>
             </div>
-            <div class="slider-meta">
-                <div class="slider-sub-slide">
-                    <img src="img/slider-sub-slide-banana.png" width="66" height="150" alt="банановое мороженое">
-                    <img src="img/slider-sub-slide-caramel.png" width="66" height="150" alt="карамельный пломбир">
-                </div>
+            <ul class="control-bullet">
+                <li class="control-bullet">
+                    .
+                </li>
+                <li class="control-bullet">
+                    .
+                </li>
+                <li class="control-bullet">
+                    .
+                </li>
+            </ul>
                 <div class="slider-socials">
                     <a href="">
                           <span class="visually-hidden">
@@ -134,7 +159,7 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </ul>
     </section>
     <section class="section-hot">
         <h2 class="headline-section">
@@ -142,9 +167,9 @@
         </h2>
         <div class="hot-col">
             <div class="hot-content">
-                <p class="title">
+                <h3 class="title">
                     Малинка даром!
-                </p>
+                </h3>
                 <p class="text">
                     При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья
                     бесплатно.
@@ -157,9 +182,9 @@
         </div>
         <div class="hot-col">
             <div class="hot-content">
-                <p class="title">
+                <h3 class="title">
                     Маршмеллоу даром!
-                </p>
+                </h3>
                 <p class="text">
                     При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.
                 </p>
@@ -177,19 +202,21 @@
         <ul class="product-catalog">
             <li class="product-card">
                 <a href="#">
-                    <img src="img/rasberry-ice-cream.jpg" width="168" height="168" alt="Малиновое мороженное">
+                    <img src="img/raspberry-ice-cream.jpg" width="168" height="168" alt="Малиновое мороженное">
+                </a>
                     <h3 class="name">
-                        Малинка
+                        <a href="#">
+                            Малинка
+                        </a>
                     </h3>
                     <p class="text">
                         Сливочное мороженое с малиновым джемом
                     </p>
-                </a>
                 <div class="price-basket">
                     <b class="product-price">
                         310 ₽/кг
                     </b>
-                    <button class="basket">
+                    <button class="basket" type="button">
                       <span class="visually-hidden">
                           В корзину
                       </span>
@@ -201,18 +228,20 @@
                 <a href="#">
                     <img src="img/pistachio-ice-cream.jpg" width="168" height="168"
                          alt="Фисташковый пломбир с кусочками шоколада">
-                    <h3 class="name">
+                </a>
+                <h3 class="name">
+                    <a href="#">
                         Фисташка
+                    </a>
                     </h3>
                     <p class="text">
                         Фисташковый пломбир с кусочками шоколада
                     </p>
-                </a>
                 <div class="price-basket">
                     <b class="product-price">
                         340 ₽/кг
                     </b>
-                    <button class="basket">
+                    <button class="basket" type="button">
                           <span class="visually-hidden">
                               В корзину
                           </span>
@@ -223,19 +252,21 @@
             <li class="product-card">
                 <a href="#">
                     <img src="img/blueberry-ice-cream.jpg" width="168" height="168" alt="мороженное с черничным джемом">
+                </a>
                     <h3 class="name">
-                        Черника
+                        <a href="#">
+                            Черника
+                        </a>
                     </h3>
                     <p class="text">
                         Крем-брюле
                         с черничным джемом
                     </p>
-                </a>
                 <div class="price-basket">
                     <b class="product-price">
                         330 ₽/кг
                     </b>
-                    <button class="basket">
+                    <button class="basket" type="button">
                           <span class="visually-hidden">
                               В корзину
                           </span>
@@ -246,8 +277,11 @@
             <li class="product-card">
                 <a href="#">
                     <img src="img/blue-ice-cream.jpg" width="168" height="168" alt="пломбир голубого цвета">
+                </a>
                     <h3 class="name">
-                        Бабл-гам
+                        <a href="#">
+                            Бабл-гам
+                        </a>
                     </h3>
                     <p class="text">
                         Ванильный пломбир
@@ -258,7 +292,7 @@
                     <b class="product-price">
                         320 ₽/кг
                     </b>
-                    <button class="basket">
+                    <button class="basket" type="button">
                           <span class="visually-hidden">
                               В корзину
                           </span>
@@ -370,7 +404,7 @@
         </div>
     </section>
     <section class="contacts">
-        <div>
+        <adress class="contacts-address">
             <p class="text">
                 Адрес главного офиса и офлайн-магазина:
             </p>
@@ -381,9 +415,7 @@
                 Для заказов по телефону:
             </p>
             <a class="phone-footer" href="tel:+78128121212">
-                <b>
-                    +7 (812) 812-12-12
-                </b>
+                +7 (812) 812-12-12
             </a>
             <p class="contacts-caption">
                 (с 10 до 20 ежедневно)
@@ -391,7 +423,7 @@
             <a class="button" href="#">
                 Форма обратной связи
             </a>
-        </div>
+        </adress>
     </section>
 </main>
 <footer class="page-footer">

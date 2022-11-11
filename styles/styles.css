@@ -89,8 +89,9 @@ button {
 
 .name a {
     text-decoration: none;
-    font-size: 24px;
-    line-height: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
     color: #2D3440;
 }
 
@@ -166,4 +167,9 @@ button {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
+}
+
+.icon-find {
+    background-image: url("../img/search.svg");
+    background-repeat: no-repeat;
 }
