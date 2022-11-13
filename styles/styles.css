@@ -22,7 +22,15 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     line-height: 22px;
@@ -38,16 +46,40 @@ button {
     color: #FCFCFC;
 }
 
+.container {
+    margin: 0 auto;
+    width: 1170px;
+}
+
 .navigation-link {
     line-height: 20px;
     text-decoration: none;
     color: #2D3440;
 }
 
+.main-container {
+    flex-grow: 1;
+}
+
+
 .headline-section {
     font-weight: 900;
     font-size: 32px;
     line-height: 46px;
+    text-align: center;
+}
+
+.page-header {
+    display: flex;
+}
+
+.navigation {
+    width: 500px;
+}
+
+.navigation-list {
+    margin: 0;
+    padding: 0;
 }
 
 .hot-content .title {
@@ -159,9 +191,6 @@ button {
     line-height: 20px;
 }
 
-.product-card {
-    background-color: #ffffff;
-}
 
 .product-price {
     font-weight: 700;
@@ -173,3 +202,138 @@ button {
     background-image: url("../img/search.svg");
     background-repeat: no-repeat;
 }
+
+.icon-ice-cream {
+    background-image: url("../img/icon-ice-cream.svg");
+    background-repeat: no-repeat;
+}
+
+.icon-sheet {
+    background-image: url("../img/icon-sheet.svg");
+    background-repeat: no-repeat;
+}
+
+.icon-cow {
+    background-image: url("../img/icon-cow.svg");
+    background-repeat: no-repeat;
+}
+
+.icon-term {
+    background-image: url("../img/icon-term.svg");
+    background-repeat: no-repeat;
+}
+
+.bg-waffle {
+    background-image: url("../img/waffle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 24px;
+}
+
+.white-bg-waffle {
+    background-color: #ffffff;
+
+
+}
+
+.mail-bg {
+    background-image: url("../img/mail-bg.png");
+    background-repeat: no-repeat;
+}
+
+.hot-cols {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hot-col {
+    width: 570px;
+    background-color: #FF7799;
+}
+
+.product-catalog {
+    padding: 0;
+    margin:0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 270px;
+    background-color: #ffffff;
+}
+
+.blog {
+    background-image: url('../img/ice-cream-background.jpg');
+    width: 570px;
+}
+
+.mail-bg {
+    width: 570px;
+    padding: 6px;
+}
+
+.send {
+    background-color: #ffffff;
+
+}
+
+.blog-send {
+    display: flex;
+    justify-content: space-between;
+}
+
+.delivery-form {
+    background-image: url("../img/delivery-form-bg.jpeg");
+    display: flex;
+    justify-content: space-between;
+}
+
+.delivery-form-appointment {
+    background-color: #ffffff;
+    width: 500px;
+}
+
+.delivery-form-text {
+    width: 500px;
+}
+
+.contacts {
+    background-image: url("../img/background-contacts-form.jpg");
+
+}
+
+
+.contacts-address {
+    font-style: normal;
+}
+
+.contacts-address {
+    background-color: #ffffff;
+    width: 343px;
+}
+
+.page-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-socials {
+    width: 104px;
+}
+
+.footer-nav {
+    width: 356px;
+}
+
+.footer-meta {
+    width: 193px;
+}
+
+
+
+
+
+
+
