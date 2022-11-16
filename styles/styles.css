@@ -528,7 +528,7 @@ img {
 
 .contacts {
     background-image: url("../img/background-contacts-form.jpg");
-    padding: 64px 763px 64px 64px;
+    padding: 64px;
     border-radius: 16px;
     background-size: 1170px 660px;
     background-position: center;
@@ -536,19 +536,15 @@ img {
 }
 
 .contacts-address {
-    font-style: normal;
-}
-
-.contacts-address {
     background-color: #ffffff;
     width: 263px;
     border-radius: 8px;
     padding: 40px;
+    font-style: normal;
 }
 
-.address-content {
-    max-width: 180px;
-    margin-bottom: 14px;
+.contacts-address .text {
+    padding-bottom: 12px;
 }
 
 .telephone-content {
