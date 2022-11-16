@@ -50,8 +50,6 @@ img {
     display: block;
 }
 
-
-
 .container {
     margin: 0 auto;
     width: 1170px;
@@ -77,6 +75,42 @@ img {
     border-radius: 30px;
     text-decoration: none;
     color: #2D3440;
+}
+
+.send-form {
+    padding-right: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-send {
+    padding: 12px 32px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    display: block;
+    width: max-content;
+    background: #FF2F64;
+    border: 0;
+    outline: 4px solid rgba(255, 47, 100, 0.3);
+    box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+    border-radius: 26px;
+    color: #FCFCFC;
+}
+
+.send-mail {
+    margin-right: 20px;
+    flex-grow: 1;
+    padding: 14px 16px;
+    background: #FFFFFF;
+    border: 1px solid #B9B9B9;
+    border-radius: 4px;
+    ont-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #B9B9B9;
 }
 
 .main-container {
@@ -107,6 +141,7 @@ img {
 
 .headline-popular {
     max-width: 527px;
+    margin-bottom: 107px;
 }
 
 .page-header {
@@ -181,6 +216,7 @@ img {
     text-decoration: none;
     color: #2D3440;
     text-align: center;
+    margin: 0;
 }
 
 
@@ -189,17 +225,15 @@ img {
     margin: 0;
 }
 
-.product-card {
-    list-style-type: none;
-
-}
-
 .product-card a {
+    display: block;
     text-decoration: none;
+    padding-bottom: 16px;
 
 }
 
 .caption {
+    margin: 0 0 14px;
     font-size: 16px;
     line-height: 20px;
     color: #565C66;
@@ -211,6 +245,7 @@ img {
     font-size: 20px;
     line-height: 24px;
     color: #2D3440;
+    padding-bottom: 8px;
 }
 
 .phone-footer {
@@ -226,6 +261,7 @@ img {
     font-size: 14px;
     line-height: 20px;
     color: #565C66;
+    margin: 0 0 33px 0;
 }
 
 .footer-nav a {
@@ -318,17 +354,26 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 24px;
+    border-radius: 16px;
+    background-position: center;
 }
 
 .white-bg-waffle {
     background-color: #ffffff;
-
-
+    padding: 56px 40px;
+    border-radius: 16px;
 }
 
 .mail-bg {
     background-image: url("../img/mail-bg.png");
     background-repeat: no-repeat;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-position: center;
+}
+
+.mail-text {
+    margin-bottom: 45px;
 }
 
 .hot-cols {
@@ -347,23 +392,42 @@ img {
     display: grid;
     padding: 0;
     margin:0;
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    gap: 91px 30px;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .product-card {
-    width: 270px;
     background-color: #ffffff;
+    list-style-type: none;
+    border-radius: 8px;
+    padding: 0 40px 24px;
 }
 
 .blog {
+    padding: 33px 32px;
     background-image: url('../img/ice-cream-background.jpg');
     width: 570px;
-    background-position: center;
-    background-size: cover;
+    background-position: -18px -110px;
+    background-size: 668px 445px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+
+.blog-head {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-decoration: none;
+    color: #2D3440;
+    margin: 0;
+}
+
+.blog-head a {
+    text-decoration: none;
+    color: #2D3440;
 }
 
 .mail-bg {
@@ -373,34 +437,103 @@ img {
 
 .send {
     background-color: #ffffff;
+    padding: 26px;
+    border-radius: 16px;
 
 }
 
 .blog-send {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 80px;
+    align-items: stretch;
 }
 
 .delivery-form {
     background-image: url("../img/delivery-form-bg.jpeg");
+    background-position: -3px -138px;
+    background-size: 1229px 808px;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: space-between;
+    padding: 64px 64px 64px 100px;
+    margin-bottom: 80px;
+    align-items: center;
+    border-radius: 16px;
 }
 
 .delivery-form-appointment {
     background-color: #ffffff;
-    width: 500px;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 8px;
+    box-sizing: border-box;
 }
 
+.delivery-form-appointment .text {
+    margin-bottom: 32px;
+}
+
+.delivery-form-appointment .button-send {
+    margin: 32px auto 0;
+}
+
+.delivery-top-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.delivery-form-item {
+    margin: 0;
+    width: 100%;
+}
+
+.delivery-form-item label {
+    width: 100%;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2D3440;
+    display: block;
+
+}
+
+.delivery-form-item input {
+    width: 100%;
+    border: 1px solid #B9B9B9;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 14px 16px 12px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #B9B9B9;
+}
+
+.form-item-date{
+    margin-right:16px;
+    width: 117px;
+    flex-shrink: 0;
+}
 .delivery-form-text {
-    width: 500px;
+    max-width: 375px;
+    padding-top: 8px;
+}
+
+.delivery-form .headline-section {
+    margin-bottom: 24px;
+    text-align: left;
 }
 
 .contacts {
     background-image: url("../img/background-contacts-form.jpg");
-
+    padding: 64px 763px 64px 64px;
+    border-radius: 16px;
+    background-size: 1170px 660px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-
 
 .contacts-address {
     font-style: normal;
@@ -408,7 +541,27 @@ img {
 
 .contacts-address {
     background-color: #ffffff;
-    width: 343px;
+    width: 263px;
+    border-radius: 8px;
+    padding: 40px;
+}
+
+.address-content {
+    max-width: 180px;
+    margin-bottom: 14px;
+}
+
+.telephone-content {
+    max-width: 263px;
+    margin-bottom: 12px;
+}
+
+.address-footer {
+    max-width: 265px;
+    margin: 0 0 24px 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
 }
 
 .page-footer {
@@ -474,11 +627,26 @@ img {
     display: block;
     margin: 0 auto;
     border-radius: 50%;
-    margin-top: -40px;
+    margin-top: -51px;
 }
 
 .product-description {
     text-align: center;
+    margin-bottom: 16px;
+}
+
+.price-basket {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.basket {
+    background: #FF2F64;
+    border-radius: 26px;
+    padding: 8px;
+    border: none;
+    box-shadow: none;
 }
 
 .section-catalog {
@@ -486,15 +654,16 @@ img {
 }
 
 .benefits {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 32px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 .benefits-item {
-    list-style-type: none;
-    box-sizing: border-box;
-    width: 50%;
-    padding-left: 56px;
+    padding-left: 64px;
 }
 
 .desc {
