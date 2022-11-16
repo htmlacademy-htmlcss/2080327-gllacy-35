@@ -46,6 +46,12 @@ button {
     color: #FCFCFC;
 }
 
+img {
+    display: block;
+}
+
+
+
 .container {
     margin: 0 auto;
     width: 1170px;
@@ -63,6 +69,16 @@ button {
     color: #2D3440;
 }
 
+.header-button {
+    margin-left: 16px;
+    padding: 6px 16px;
+    min-height: 20px;
+    background-color: rgba(252, 252, 252, 0.3);
+    border-radius: 30px;
+    text-decoration: none;
+    color: #2D3440;
+}
+
 .main-container {
     flex-grow: 1;
 }
@@ -73,29 +89,41 @@ button {
     font-size: 32px;
     line-height: 46px;
     text-align: center;
-    padding: 56px;
+    margin: 0 auto 55px;
+}
+
+.sign-in {
+    padding-left: 38px;
+    background-image: url("../img/log-in.svg");
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: 16px 8px;
 }
 
 .headline-present {
-    width: 434px;
-    margin: 0 auto;
-    padding-top: 0;
+    max-width: 434px;
+
 }
 
 .headline-popular {
-    width: 527px;
-    margin: 0 auto;
-    padding-top: 0;
+    max-width: 527px;
 }
 
 .page-header {
     display: flex;
     align-items: center;
     margin-top: 24px;
+    justify-content: space-between;
 }
 
 .navigation {
     width: 500px;
+}
+
+.user-action {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
 }
 
 .navigation-list {
@@ -111,28 +139,39 @@ button {
     display: none;
 }
 
-.log-in {
-    background-image: url("../img/log-in.svg");
-    background-repeat: no-repeat;
+.dropdown-head {
+    padding-right: 38px;
 }
+
 
 .basket-header {
+    padding-left: 38px;
     background-image: url("../img/basket.svg");
     background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: 16px 8px;
 }
 
-.hot-content .title {
+.hot-col .title {
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
+
 }
 
 .button {
+    padding: 12px 32px;
     text-decoration: none;
     color: #2D3440;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
+    background-color: #FCFCFC;
+    outline: 4px solid rgba(252, 252, 252, 0.4);
+    box-shadow: 0px 4px 12px rgb(45 52 64 / 10%);
+    border-radius: 26px;
+    display: block;
+    width: max-content;
 }
 
 .name {
@@ -248,6 +287,10 @@ button {
 .icon-find {
     background-image: url("../img/search.svg");
     background-repeat: no-repeat;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    background-position: center;
 }
 
 .icon-ice-cream {
@@ -294,16 +337,19 @@ button {
 }
 
 .hot-col {
-    display: flex;
-    justify-content: space-between;
-    width: 570px;
     background-color: #FF7799;
+    padding: 36px 206px 36px 36px;
+    max-width: 328px;
+    border-radius: 16px;
 }
 
 .product-catalog {
+    display: grid;
     padding: 0;
     margin:0;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -393,24 +439,15 @@ button {
     overflow: hidden;
 }
 
-.navigation-user .navigation-link {
-    min-width: 32px;
-    min-height: 32px;
-}
-
 .section-slider {
-    height: 554px;
+    height: 559px;
     margin-bottom: 80px;
 }
 
 .section-hot {
     margin-bottom: 80px;
 }
-.hot-content {
-    padding-top: 36px;
-    padding-left: 36px;
-    width: 328px;
-}
+
 .raspberry-bg {
     background-image: url("../img/raspberry.png");
     background-repeat: no-repeat;
