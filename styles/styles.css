@@ -453,7 +453,7 @@ button {
 }
 
 .filter-sort {
-  background: rgb(252 252 252 / 30%);
+  background: rgba(252, 252, 252, 0.3);
   border-radius: 20px;
   padding: 8px 16px;
   border: 0;
@@ -473,7 +473,7 @@ button {
   list-style-type: none;
   margin: 0;
   width: 383px;
-  background: rgb(252 252 252 / 30%);
+  background: rgba(252, 252, 252, 0.3);
   border-radius: 20px;
   padding: 8px 16px;
   box-sizing: border-box;
@@ -485,14 +485,14 @@ button {
   list-style-type: none;
   margin: 0;
   width: 604px;
-  background: rgb(252 252 252 / 30%);
+  background: rgba(252, 252, 252, 0.3);
   border-radius: 20px;
   padding: 8px 16px;
   box-sizing: border-box;
 }
 
 .range-wrapper {
-  background: rgb(252 252 252 / 30%);
+  background: rgba(252, 252, 252, 0.3);
   border-radius: 20px;
   padding: 17px 16px;
   border: 0;
@@ -501,7 +501,7 @@ button {
 }
 
 .range-line {
-  border: 1px solid rgb(86 92 102 / 0.3);
+  border: 1px solid rgba(86, 92, 102, 0.3);
   position: relative;
 }
 
