@@ -440,16 +440,17 @@ button {
   line-height: 46px;
   padding-top: 16px;
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 .catalog-filter {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
-  justify-content: space-between;
-  max-width: 823px;
-  box-sizing: border-box;
-  margin-bottom: 84px;
+  margin-bottom: 82px;
+}
+
+.catalog-filter-group:last-of-type {
+  margin-right: 16px;
 }
 
 .filter-sort {
@@ -469,14 +470,30 @@ button {
 
 .catalog-filter-list-fat {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
-  width: 383px;
   background: rgba(252, 252, 252, 0.3);
   border-radius: 20px;
-  padding: 8px 16px;
-  box-sizing: border-box;
+  padding: 8px 24px;
+}
+
+.catalog-filter-list-fat .catalog-filter-item:not(:last-child) {
+  margin-right: 17px;
+}
+
+.catalog-fat-input:checked +.control-fat::after {
+  content:'';
+}
+
+.control-fat::after {
+  width: 6px;
+  height: 6px;
+  background-color: #2D3440;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
 }
 
 .catalog-filter-list-taste {
@@ -549,6 +566,22 @@ button {
   line-height: 20px;
 }
 
+.breadcrumbs-item {
+  position: relative;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  content:'';
+  position: absolute;
+  right: 7px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  background-image: url("../img/chevrons-right.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .breadcrumbs-link {
   width: 57px;
   height: 20px;
@@ -557,9 +590,7 @@ button {
   margin-right: 28px;
 }
 
-.breadcrumbs-item:last-child .breadcrumbs-link {
-  text-decoration: underline;
-}
+.breadcrumbs-item:last-child .breadcrumbs-link {border-bottom: 1px solid #2D3440;}
 
 .catalog-filter-title {
   font-weight: 400;
@@ -571,12 +602,12 @@ button {
 }
 
 .catalog-filter-group {
-  margin-bottom: 14px;
-
+  margin-bottom: 16px;
+  margin-right: 24px;
 }
 
 .filter-button {
-  margin-bottom: 12px;
+  margin-bottom: 15px;
   margin-right: 15px;
   width: 187px;
   background: rgba(252, 252, 252, 0.3);
@@ -590,9 +621,26 @@ button {
   padding: 8px 50px;
 }
 
+
 .control {
   font-size: 14px;
   line-height: 20px;
+}
+
+.control-fat {
+  position: relative;
+  padding-left: 24px;
+}
+
+.control-fat::before {
+  content:'';
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #2D3440;
+  border-radius: 50%;
 }
 
 
@@ -920,11 +968,13 @@ button {
 .slider-sub-slide {
   width: 100px;
   position: relative;
+  opacity: 0.4;
 }
 
 .slider-sub-slide.active {
   width: 306px;
   padding-right: 20px;
+  opacity: 1;
 }
 
 .slider-sub-slide::before {

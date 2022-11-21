@@ -96,9 +96,9 @@
                     </a>
                 </li>
                 <li class="breadcrumbs-item">
-                    <a class="breadcrumbs-link">
+                    <span class="breadcrumbs-link">
                         Сливочное мороженое
-                    </a>
+                    </span>
                 </li>
             </ul>
             <h1 class="inner-header-title">
@@ -108,110 +108,112 @@
         <section class="catalog-products">
             <h2 class="visually-hidden">Список товаров с фильтрами
             </h2>
-            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-                <fildset class="catalog-filter-group set-sort">
-                    <legend class="catalog-filter-title">
-                    Сортировка:
-                    </legend>
-                    <select class="filter-sort" name="sort">
-                        <option value="popularity">
-                            по популярности
-                        </option>
-                        <option value="price-asc">
-                            по возрастанию цены
-                        </option>
-                        <option value="price-desc">
-                            по убыванию цены
-                        </option>
-                    </select>
-                </fildset>
-                <fildset class="catalog-filter-group">
-                    <legend class="catalog-filter-title">
-                        Цена: 100 ₽ – 500 ₽
-                    </legend>
-                    <div class="range-wrapper">
-                        <div class="range-line">
-                            <div class="range-circle circle-left">
-                            </div>
-                            <div class="dark-line">
-                            </div>
-                            <div class="range-circle circle-right">
+            <form  action="https://echo.htmlacademy.ru/" method="get">
+                <div class="catalog-filter">
+                    <fildset class="catalog-filter-group set-sort">
+                        <legend class="catalog-filter-title">
+                            Сортировка:
+                        </legend>
+                        <select class="filter-sort" name="sort">
+                            <option value="popularity">
+                                по популярности
+                            </option>
+                            <option value="price-asc">
+                                по возрастанию цены
+                            </option>
+                            <option value="price-desc">
+                                по убыванию цены
+                            </option>
+                        </select>
+                    </fildset>
+                    <fildset class="catalog-filter-group">
+                        <legend class="catalog-filter-title">
+                            Цена: 100 ₽ – 500 ₽
+                        </legend>
+                        <div class="range-wrapper">
+                            <div class="range-line">
+                                <div class="range-circle circle-left">
+                                </div>
+                                <div class="dark-line">
+                                </div>
+                                <div class="range-circle circle-right">
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                </fildset>
-                <fildset class="catalog-filter-group">
-                    <legend class="catalog-filter-title">
-                    Жирность:
-                    </legend>
-                    <ul class="catalog-filter-list-fat">
-                        <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="radio" name="fat-group" value="zero-fat">
-                                0%
-                            </label>
-                        </li>
-                        <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="radio" name="fat-group" value="to-tan-fat" checked>
-                                до 10%
-                            </label>
-                        </li>
-                        <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="radio" name="fat-group" value="to-thirty-fat">
-                                до 30%
-                            </label>
-                        </li>
-                        <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="radio" name="fat-group" value="height-thirty-fat">
-                                выше 30%
-                            </label>
-                        </li>
-                    </ul>
-                </fildset>
-                <fildset class="catalog-filter-group">
-                    <legend class="catalog-filter-title">
-                    Наполнители:
-                    </legend>
-                    <ul class="catalog-filter-list-taste">
-                        <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="checkbox" name="chocolate" checked>
-                                шоколадные
-                            </label>
-                        </li>
-                        <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="checkbox" name="sugar" checked>
-                                сахарные посыпки
-                            </label>
-                        </li>
-                        <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="checkbox" name="fruits" >
-                                фрукты
-                            </label>
-                        </li>
-                        <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="checkbox" name="syrup" >
-                                сиропы
-                            </label>
-                        </li>
-                        <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="checkbox" name="jam">
-                                джемы
-                            </label>
-                        </li>
+                    </fildset>
+                    <fildset class="catalog-filter-group">
+                        <legend class="catalog-filter-title">
+                            Жирность:
+                        </legend>
+                        <ul class="catalog-filter-list-fat">
+                            <li class="catalog-filter-item">
+                                <input class="catalog-fat-input visually-hidden" id="fat-0" type="radio" name="fat-group" value="zero-fat">
+                                <label class="control control-fat" for="fat-0">
+                                    0%
+                                </label>
+                            </li>
+                            <li class="catalog-filter-item">
+                                <input class="catalog-fat-input visually-hidden" id="fat-1" type="radio" name="fat-group" value="to-tan-fat" checked>
+                                <label class="control control-fat" for="fat-1">
+                                    до 10%
+                                </label>
+                            </li>
+                            <li class="catalog-filter-item">
+                                <input class="catalog-fat-input visually-hidden" for="fat-2" id="fat-2" type="radio" name="fat-group" value="to-thirty-fat">
+                                <label class="control control-fat">
+                                    до 30%
+                                </label>
+                            </li>
+                            <li class="catalog-filter-item">
+                                <input class="catalog-fat-input visually-hidden" id="fat-3" type="radio" name="fat-group" value="height-thirty-fat">
+                                <label class="control control-fat" for="fat-3">
+                                    выше 30%
+                                </label>
+                            </li>
                         </ul>
-                </fildset>
-                <button class="filter-button" type="submit">
-                    Применить
-                </button>
+                    </fildset>
+                    <fildset class="catalog-filter-group">
+                        <legend class="catalog-filter-title">
+                            Наполнители:
+                        </legend>
+                        <ul class="catalog-filter-list-taste">
+                            <li class="catalog-filter-item">
+                                <label class="control">
+                                    <input class="control-input" type="checkbox" name="chocolate" checked>
+                                    шоколадные
+                                </label>
+                            </li>
+                            <li class="catalog-filter-item">
+                                <label class="control">
+                                    <input class="control-input" type="checkbox" name="sugar" checked>
+                                    сахарные посыпки
+                                </label>
+                            </li>
+                            <li class="catalog-filter-item">
+                                <label class="control">
+                                    <input class="control-input" type="checkbox" name="fruits" >
+                                    фрукты
+                                </label>
+                            </li>
+                            <li class="catalog-filter-item">
+                                <label class="control">
+                                    <input class="control-input" type="checkbox" name="syrup" >
+                                    сиропы
+                                </label>
+                            </li>
+                            <li class="catalog-filter-item">
+                                <label class="control">
+                                    <input class="control-input" type="checkbox" name="jam">
+                                    джемы
+                                </label>
+                            </li>
+                        </ul>
+                    </fildset>
+                    <button class="filter-button" type="submit">
+                        Применить
+                    </button>
+                </div>
             </form>
             <ul class="product-catalog">
                 <li class="product-card">
